@@ -1,0 +1,19 @@
+The aggregate accruals anomaly is the positive association between aggregate accruals (the non-cash component of earnings summed through all firms in a broad market index like the S&P 500) and future equity index returns. Research suggests that the aggregate level of accruals predicts future positive broad equity index returns. This predictive ability could be used to create a market timing strategy. Although this strategy delivers an impressive performance, investors should be cautious as the strategy’s backtest is based only on a small number of data points, and there isn’t a consensus among academic theories that tries to explain this anomaly.
+
+Fundamental reason 
+Academic studies point to managerial market timing as one potential explanation for the anomaly; that is, a company’s managers time the equity markets to level up or level down accrual components in earnings and manage earnings in response to market-undervaluation, i.e., “lean against the wind” in earnings management. Another explanation is that aggregate level accruals are correlated with rational variations in discount rates. Since accruals are related to shifts in demand, inventories, and investment activity, a natural hypothesis is that accruals are associated with business cycle shifts in risk premia.
+
+Simple trading strategy
+The value-weighted S&P 500 Index and yields on the 3-month T-Bills are used as proxies for aggregate stock market returns and risk-free rates. Accruals for each company in the S&P 500 index are calculated each year at the end of April as:
+BS_ACC = ( ∆CA – ∆Cash) – ( ∆CL – ∆STD – ∆ITP) – Dep
+Where:
+∆CA = annual change in current assets
+∆Cash = change in cash and cash equivalents
+∆CL = change in current liabilities
+∆STD = change in debt included in current liabilities
+∆ITP = change in income taxes payable
+Dep = annual depreciation and amortization expense
+The value-weighted aggregate accruals are then calculated. The term premium is also calculated as the yield spread of a ten-year Treasury Bond over a one-month Treasury Bill. Aggregate accruals and the term spread are then used in a regression equation (with 15 years of data) to calculate the next year’s forecast for the mean and variance of excess stock market returns. The weight of investment in the stock market is proportional to the forecasted mean-variance ratio of stock returns, and the remaining cash is invested in T-Bills. The portfolio is held for twelve months, and it is rebalanced at the end of April (yearly rebalancing frequency).
+
+Hedge for stocks during bear markets
+Not known - The strategy is the timing equity market but invests long-only into the equity market factor; therefore, it is not suitable as a hedge/diversification during market/economic crises. The strategy’s goal is to hold the equity market only in positive times for equity market factor and be out of equities otherwise. This logic can be may be used to create an amended market timing strategy (using original rules), which is out of equities during positive times and holds bonds (or goes short equities) during bad times. This new amended strategy can be maybe used as a hedge/diversification to equity market risk factor during bear markets. However, performance/risk characteristics and overall correlation and quality of suggested amended strategy can be found out only by rigorous backtest and source academic research paper doesn’t give us any clues on how it will perform…
